@@ -1,0 +1,37 @@
+<Entity tags="hittable">
+    <SpriteComponent
+        is_text_sprite="1"
+        image_file="data/fonts/font_pixel_white.xml"
+        text="I will crash :-("
+    />
+
+    <SpriteComponent
+        image_file="data/entities/animals/lukki/lukki_feet/lukki_dark_sprite.xml"
+        offset_x="0"
+        offset_y="0"
+        >
+    </SpriteComponent>
+
+    <PhysicsBodyComponent
+        force_add_update_areas="1"
+        allow_sleep="1"
+        angular_damping="0.02"
+        fixed_rotation="0"
+        is_bullet="0"
+        linear_damping="0"  >
+    </PhysicsBodyComponent>
+
+    <PhysicsShapeComponent
+        is_circle="1"
+        radius_x="10"
+        radius_y="10"
+        friction="0.0"
+        restitution="0.3" >
+    </PhysicsShapeComponent>
+
+    <DamageModelComponent
+        hp="0.1"
+        ragdoll_filenames_file=""
+        >
+    </DamageModelComponent>
+</Entity>
